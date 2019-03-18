@@ -28,7 +28,7 @@ def main():
             print("The area is","%2f" %area)
 
         else:
-            print("Unknown shape!")
+            print("Unknown shape! Try again!")
 
 if __name__ == "__main__":
     main()
