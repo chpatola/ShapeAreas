@@ -1,7 +1,7 @@
 
 from shapes import *
 
-def stat():
+def statt():
     triangles = get_tri()
     rectangles = get_rec()
     circles = get_cir()
@@ -11,12 +11,12 @@ def stat():
     recA =[]
     circA=[]
 
-    while True:
-        Import re
+    import re
+    import numpy as np
+    import matplotlib.pyplot as plt
 
-        %matplotlib inline
-        import numpy as np
-        import matplotlib.pyplot as plt
+    while True:
+
 
         print("\nAmount of calculations you have made so far:")
         print("\tTriangles: ",len(triangles))
@@ -33,7 +33,7 @@ def stat():
             t=plt.plot(triA,'mo')
             plt.title("Triangle areas")
             plt.ylabel("area")
-            plt.xlabel("triangles")
+            plt.xlabel("triangle number")
             plt.xticks(range(0, len(triA)))
             plt.show(t)
 
@@ -48,7 +48,7 @@ def stat():
             r=plt.plot(recA,'ro')
             plt.title("Rectangle areas")
             plt.ylabel("area")
-            plt.xlabel("rectangles")
+            plt.xlabel("rectangle number")
             plt.xticks(range(0, len(recA)))
             plt.show(r)
 
@@ -62,7 +62,7 @@ def stat():
             c=plt.plot(circA,'ko')
             plt.title("Circle areas")
             plt.ylabel("area")
-            plt.xlabel("circles")
+            plt.xlabel("circle number")
             plt.xticks(range(0, len(circA)))
             plt.show(c)
 

@@ -1,9 +1,10 @@
 
 from shapes import *
 from funny import *
-from stat import *
+from statt import *
 
 def ui():
+
     while True:
         ask=input("""\n***** This is a programme for calculating areas of shapes *****\n
         What do you want to do? \n
@@ -22,7 +23,7 @@ def ui():
         elif ask =="c":
             shapes()
         elif ask =="s":
-            stat()
+            statt()
         elif ask =="f":
             funny()
         else:
